@@ -1,0 +1,82 @@
+div.autor{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+div.img{
+    width:30%;
+    overflow: hidden;     
+    display: inline-block;
+    vertical-align: top; 
+    margin-right: 5%; 
+    padding: 1%;
+    text-align: center;
+    cursor:pointer;
+}
+
+div.img img{
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #000;  
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    transition: 0.3s;
+}
+
+div.info{
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #cccbcb;
+    border-radius: 5px;
+    box-shadow:  #cccbcb 2px 2px 2px;
+    margin-top : 20px;
+    width:64%;
+    background: #f1f1f1;
+}
+
+div.info h3{
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    padding-bottom: 5px; 
+    color:#00476a;
+}
+div.info p{
+    font-size: 1em;
+    font-family: 'Mina';
+    margin-bottom: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+div.info p:hover{
+    color:#00476a;
+}
+
+article.auth{
+    padding: 10px;
+    border: 1px solid #000;
+    width:800px;
+    margin:auto;
+}
+article.auth header{
+    text-align: center;
+}
+
+span.title{
+    font-weight: bold;
+}
+
+h2.autores{
+    text-align: center;
+    color:#00476a !important;
+    font-family: 'Mina';
+}
+
+@media screen and (max-width: 950px){
+
+    div.info, div.img{
+        width: 100%;
+    }
+}
