@@ -7,7 +7,7 @@
     <title>O.V.I Diseño Web - Grupo 51</title>
     <link rel="stylesheet" href="CSS/fonts.css"/>
     <link rel="stylesheet" href="CSS/estilos.css"/>
-    <link rel="stylesheet" href="CSS/autores.css"/>
+    <link rel="stylesheet" href="CSS/contenido.css"/>
     <link rel="stylesheet" href="CSS/normalize.css"/>
     <script type="text/javascript" src="Javascript/menu.js"></script> 
     <script src="Javascript/prefixfree.js"></script>   
@@ -98,57 +98,36 @@
         <section class="content">
             <article>
                 <header>
-                    <h2 class="autores">Autores</h2>
+                    <!-- Modificar el titulo y fecha de la lectura, actividad o video -->
+                    <h2>Como realizar Fork y Pull Request en Github</h2>
+                    <p>Publicado el 27/03/2018 a las 21:00</p>
                 </header>
-                <div class="autor">
-                    <div class="img">
-                        <img src="Imagenes/imagen-autor-bryan.jpg" alt="Bryan Josue Osses Sichaca" title="Bryan Josue Osses Sichaca">
-                    </div>
-                    <div class="info">
-                        <h3>Bryan Josue Osses Sichaca</h3>
-                        <p><span class="title">Codigo: </span>1018465386</p>
-                        <p><span class="title">Programa: </span>Ingeniería de Sistemas</p>
-                        <p><span class="icon-mail"> </span><span class="title">Correo Electronico: </span>megamitensei1994@gmail.com</p>
-                        <p><span class="icon-skype"> </span><span class="title">Skype: </span>bryan_josue_osses_sichaca@hotmail.com</p>
-                    </div>
-                </div>
-                <!-- Modificar el contenido e imagenes para que concuerde con sus datos de autor. (no modificar la estructura de divs ni cambiar clases) -->
-                <div class="autor">
-                    <div class="img">
-                        <img src="Imagenes/imagen-autor-david.jpg" alt="Jose David Mejia Guzman" title="Jose David Mejia Guzman">
-                    </div>
-                    <div class="info">
-                        <h3>Jose David Mejia Guzman</h3>
-                        <p><span class="title">Codigo: </span>1015463916</p>
-                        <p><span class="title">Programa: </span>Ingenieria de Sistemas</p>
-                        <p><span class="icon-mail"> </span><span class="title">Correo Electronico: </span>jdmejia629@misena.edu.co</p>
-                        <p><span class="icon-skype"> </span><span class="title">Skype: </span>+57 3143912908</p>
-                    </div>
-                </div>
-                <div class="autor">
-                    <div class="img">
-                        <img src="Imagenes/reemplazar-por-imagen-autor.png" alt="Nombre Autor" title="Nombre Autor">
-                    </div>
-                    <div class="info">
-                        <h3>Nombre Autor</h3>
-                        <p><span class="title">Codigo: </span> codigo autor</p>
-                        <p><span class="title">Programa: </span>Programa autor</p>
-                        <p><span class="icon-mail"> </span><span class="title">Correo Electronico: </span>e-mail autor</p>
-                        <p><span class="icon-skype"> </span><span class="title">Skype: </span>skype autor</p>
-                    </div>
-                </div>
-                <div class="autor">
-                    <div class="img">
-                        <img src="Imagenes/reemplazar-por-imagen-autor.png" alt="Nombre Autor" title="Nombre Autor">
-                    </div>
-                    <div class="info">
-                        <h3>Nombre Autor</h3>
-                        <p><span class="title">Codigo: </span> codigo autor</p>
-                        <p><span class="title">Programa: </span>Programa autor</p>
-                        <p><span class="icon-mail"> </span><span class="title">Correo Electronico: </span>e-mail autor</p>
-                        <p><span class="icon-skype"> </span><span class="title">Skype: </span>skype autor</p>
-                    </div>
-                </div>
+                <!-- 
+                    Todas Las lecturas, Videos o información va en este espacio
+
+                    SI SE NECESITAN CREAR ESTILOS ESPECIFICOS PARA EL CONTENIDO, CREAR UNA NUEVA HOJA DE ESTILOS
+                    Y VINCULARLA AL DOCUMENTO, NO MODIFICAR LA EXISTENTE.
+
+                -->
+                <iframe class="video" width="420" height="315" src="https://www.youtube.com/embed/3kZW2tt2iEk"></iframe>
+                <p>
+                cuando hacemos <span class="resaltado">Fork</span> de un repositorio estamos haciendo una copia exacta de ese repositorio, lo cual nos permite experimentar y realizar cambios
+                sin afectar el repositorio original, este proceso dará como resultado dos repositorios independientes que pueden evolucionar de manera individual cada uno. 
+                </p>
+                <p>
+                Estas copias, se utilizan normalmente para permitir a otros desarrolladores contribuir de manera segura y organizada sobre un proyecto a través 
+                de las denominadas <span class="resaltado">pull-request"</span> las cuales son peticiones que el propietario de un fork realiza al propietario del repositorio original con el fin
+                de que haga merge <span class="resaltado">(mezclar)</span> con el repositorio original incorporando los cambios realizados en el <span class="resaltado">fork</span>.
+                </p>
+                <p>
+                En este vídeo, explicamos como realizar Fork sobre un repositorio, clonar ese Fork de manera local a nuestro computador utilizando GitHubDesktop y 
+                finalmente como proponer estos cambios a través de pull request en GitHub.
+                </p>
+                <footer>
+                    <!-- Modificar los enlaces según el orden de las paginas -->
+                    <div class="button-next"><a href="#" title="Siguiente" class="icon-arrow-right"></a></div>
+                    <div class="button-next"><a href="#" title="Atras" class="icon-arrow-left"></a></div>
+                </footer>
             <article>
         </section>
     </main>

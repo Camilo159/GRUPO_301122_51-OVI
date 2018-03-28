@@ -1,0 +1,25 @@
+.content article .video{
+    width:95%;
+    height:400px;
+    margin-left: 2.5%;
+    margin-bottom: 20px;
+    transition: 1s ease;
+}
+
+.content article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    width:95%;
+    margin-left:2.5%;
+}
+
+.resaltado{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1050px){
+   
+    .content article .video{
+        height: 300px;
+    }
+}
