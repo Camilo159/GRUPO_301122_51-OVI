@@ -30,7 +30,6 @@ header div.logo{
     padding: 10px;
     vertical-align: top;
     transition: 1s all ease;
-    margin-top: 15px;
 }
 
 header div.logo img{
@@ -40,7 +39,6 @@ header div.logo img{
 }
 
 header div.principal{
-    padding: 20px;
     display:inline-block;
     vertical-align: top;
     transition: 1s all ease;
@@ -65,7 +63,6 @@ header div.social{
     vertical-align: top;
     padding: 30px;
     float:right;
-    margin-top: 20px;
 }
 
 header div.social ul li{
@@ -323,6 +320,7 @@ span.icon-minus, span.icon-plus{
     padding: 10px;
     border-radius: 5px;
     background: #f1f1f1;
+    text-align: center;
 }
 
 .content article header h2{
@@ -334,6 +332,7 @@ span.icon-minus, span.icon-plus{
     font-size: 0.8em;
     color:#999;
     font-weight: bold;
+    margin-top:5px;
 }
 
 /* Footer del articulo principal */
