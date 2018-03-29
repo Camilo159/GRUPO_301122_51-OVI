@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>O.V.I Diseño Web - Grupo 51</title>
     <link rel="stylesheet" href="CSS/fonts.css"/>
     <link rel="stylesheet" href="CSS/estilos.css"/>
     <link rel="stylesheet" href="CSS/normalize.css"/>
-    <script type="text/javascript" src="Javascript/menu.js"></script> 
+    <link rel="stylesheet" href="CSS/principal.css"/>
+    <script type="text/javascript" src="Javascript/menu.js"></script>   
     <script src="Javascript/prefixfree.js"></script>   
-    <script src="Javascript/modernizr.js"></script>  
+<!--Script para cargar archivos dentro de la web sin recargar la pagina-->
+<script src="Javascript/modernizr.js"></script>  
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script>
+function cargar(div,desde)
+{
+     $(div).load(desde);
+}
+</script>
 </head>
 <body>
     <!-- Header de la pagina web, Logo, Titulo, barra de navegación principal, barra social -->
@@ -34,7 +44,7 @@
         </div>
         <nav class="pane">
             <ul>
-                <li><a href="index.html"><span class="icon-home" title="Pagina de inicio"> </span>Inicio</a></li>
+                <li><a href="#" onclick="cargar('#contenido', 'contenido_principal.html')"><span class="icon-home" title="Inicio"> </span>Inicio</a></li>
                 <li><a href="#"><span class="icon-books"> </span>Actividades</a>
                     <ul>
                         <li><a href="#"><span class="icon-hammer"></span> Git y Github</a></li>
@@ -42,7 +52,7 @@
                         <li><a href="#"><span class="icon-lab"></span> CSS3</a></li>
                     </ul>
                 </li>
-                <li><a href="autores.html"> <span class="icon-users"> </span>Autores</a></li>
+                <li><a href="" onclick="cargar('#contenido', 'autores.html')"> <span class="icon-users"> </span>Autores</a></li>
                 <li><a href="https://github.com/BryanJosueOssesSichaca/GRUPO_301122_51-OVI" target="_blank" title="Repositorio GitHub"><span class="icon-github"> </span>Repositorio GitHub</a></li>
             </ul>
         </nav>
@@ -51,12 +61,12 @@
     <main>
         <!-- Barra lateral, menú acordeon y widgets (Contador de visitas y feed de Twitter) -->
         <aside>
-            <h3 class="title">Lecturas y videos</h3>
+            <h3 class="title">Lecturas y ideos</h3>
             <button class="acordeon"><span class="icon-minus"></span> Git y Github</button>
             <div class="panel">
                 <ul>
                     <!-- Modificar vinculos (link) titulo y logo de acuerdo al contenido creado-->
-                    <li><a href="videoGithub.html"><span class="icon-file-play"></span> <b>video</b> Fork y Pull request</a></li>
+                    <li><a href="#"onclick="cargar('#contenido', 'videoGithub.html')"><span class="icon-file-play"></span> <b>video</b> Fork y Pull request</a></li>
                 </ul>
             </div>
             <button class="acordeon"><span class="icon-minus"></span> HTML5</button>
@@ -95,25 +105,11 @@
         </aside>
             <!-- Section, articles de la pagina de web, Contenido principal de la pagina -->
         <section class="content">
-            <article>
-                <header>
-                    <!-- Modificar el titulo y fecha de la lectura, actividad o video -->
-                    <h2>Titulo del articulo</h2>
-                    <p>Escrito el 18/03/2018 a las 14:07</p>
-                </header>
-                <!-- 
-                    Todas Las lecturas, Videos o información va en este espacio
-
-                    SI SE NECESITAN CREAR ESTILOS ESPECIFICOS PARA EL CONTENIDO, CREAR UNA NUEVA HOJA DE ESTILOS
-                    Y VINCULARLA AL DOCUMENTO, NO MODIFICAR LA EXISTENTE.
-
-                -->
-                <footer>
-                    <!-- Modificar los enlaces según el orden de las paginas -->
-                    <div class="button-next"><a href="#" title="Siguiente" class="icon-arrow-right"></a></div>
-                    <div class="button-next"><a href="#" title="Atras" class="icon-arrow-left"></a></div>
-                </footer>
-            <article>
+                <div class"wrapper">
+                <div id="contenido" >
+                <!--No agregar codigo aqui, se referencia el div -->    
+                </div>
+                </div>
         </section>
     </main>
 
