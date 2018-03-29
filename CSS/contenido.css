@@ -1,22 +1,20 @@
 .content article .video{
-    width:95%;
-    height:400px;
-    margin-left: 2.5%;
+    width:80%;
+    height:500px;
+    margin-left: 10%;
     margin-bottom: 20px;
     transition: 1s ease;
 }
-
-.content article > p{
+.content article > p, article > h3, article > h2{
+    font-size: 25px;
     text-align: justify;
     margin-bottom: 20px;
-    width:95%;
-    margin-left:2.5%;
+    width:100%;
+    margin-left:0.5%;
 }
-
 .resaltado{
     font-weight: bold;
 }
-
 @media screen and (max-width: 1050px){
    
     .content article .video{
