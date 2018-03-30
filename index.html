@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!-- etiquetas meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>O.V.I Diseño Web - Grupo 51</title>
+    <!-- vinculos a archivos css -librerias -->
     <link rel="stylesheet" href="CSS/fonts.css"/>
-    <link rel="stylesheet" href="CSS/estilos.css"/>
     <link rel="stylesheet" href="CSS/normalize.css"/>
-    <link rel="stylesheet" href="CSS/principal.css"/>
-    <script type="text/javascript" src="Javascript/menu.js"></script>   
-    <script src="Javascript/prefixfree.js"></script>   
-    <script src="Javascript/modernizr.js"></script>  
+    <!-- vinculos a archivos css - creados -->
+    <link rel="stylesheet" href="CSS/autores.css"/>
+    <link rel="stylesheet" href="CSS/contenido.css"/>
+    <link rel="stylesheet" href="CSS/estilos.css"/>
+    <!-- vinculos a archivos .js (Javascript) - librerias -->
     <script src="Javascript/jQuery_3.3.1.js"></script>
-
+    <script src="Javascript/prefixfree.js"></script>   
+    <script src="Javascript/modernizr.js"></script>
+    <!-- Archivos .js Creados -->
+    <script src="Javascript/Script_agregar_contenido.js"></script>
+    <script src="Javascript/menu.js"></script>      
 </head>
 <body>
     <!-- Header de la pagina web, Logo, Titulo, barra de navegación principal, barra social -->
@@ -38,7 +43,7 @@
         </div>
         <nav class="pane">
             <ul>
-                <li><a href="#" onclick="cargar('#contenido', 'contenido_principal.html')"><span class="icon-home" title="Inicio"> </span>Inicio</a></li>
+                <li><a href="#" id="index"><span class="icon-home" title="Inicio"></span>Inicio</a></li>
                 <li><a href="#"><span class="icon-books"> </span>Actividades</a>
                     <ul>
                         <li><a href="#"><span class="icon-hammer"></span> Git y Github</a></li>
@@ -46,7 +51,7 @@
                         <li><a href="#"><span class="icon-lab"></span> CSS3</a></li>
                     </ul>
                 </li>
-                <li><a href="" onclick="cargar('#contenido', 'autores.html')"> <span class="icon-users"> </span>Autores</a></li>
+                <li><a href="#" id="autores"><span class="icon-users"> </span>Autores</a></li>
                 <li><a href="https://github.com/BryanJosueOssesSichaca/GRUPO_301122_51-OVI" target="_blank" title="Repositorio GitHub"><span class="icon-github"> </span>Repositorio GitHub</a></li>
             </ul>
         </nav>
@@ -60,7 +65,7 @@
             <div class="panel">
                 <ul>
                     <!-- Modificar vinculos (link) titulo y logo de acuerdo al contenido creado-->
-                    <li><a href="#"onclick="cargar('#contenido', 'videoGithub.html')"><span class="icon-file-play"></span> <b>video</b> Fork y Pull request</a></li>
+                    <li><a href="#" id="github-video"><span class="icon-file-play"></span> <b>video</b> Fork y Pull request</a></li>
                 </ul>
             </div>
             <button class="acordeon"><span class="icon-minus"></span> HTML5</button>
@@ -98,12 +103,8 @@
             </div>
         </aside>
             <!-- Section, articles de la pagina de web, Contenido principal de la pagina -->
-        <section class="content">
-                <div class"wrapper">
-                <div id="contenido" >
-                <!--No agregar codigo aqui, se referencia el div -->    
-                </div>
-                </div>
+        <section class="content" id="contenido">
+            <!--No agregar codigo aqui, ir al archivo Script_agregar_contenido.js y referenciar el contenido a través de la funcion cargarContenido() -->    
         </section>
     </main>
 
