@@ -20,12 +20,12 @@ $(document).ready(function(){
 	$('.right span').click(nextSlider);
 	$('.left span').click(prevSlider);
 
-	/*
+	
 	//Aplicando Intervalo automatico
 	setInterval(function(){
 		nextSlider();
 	},3000);
-	*/
+	
 
 	//FUNCIONES -----------------------------------
 
