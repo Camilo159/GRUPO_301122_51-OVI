@@ -1,13 +1,14 @@
 (function(){
 	$(document).ready(function(){
 
-		function cargarContenido(class,contenido){
+		function cargarContenido(id,contenido){
 			$(id).click(function(){
 				$("#contenido").load(contenido);
 			});
 		}
 		$("#contenido").load("contenido_principal.html");
 
+		/* Para agregar Contenido llamar a la función cargarContenido() 
 
 			parametro 1: el Id del elemento que actua como boton
 			parametro 2: pagina.html del contenido
