@@ -6,7 +6,7 @@
     transition: 1s ease;
 }
 .content article > p, article > h3, article > h2{
-    font-size: 25px;
+    font-size: 1.3em;
     text-align: justify;
     margin-bottom: 20px;
     width:100%;

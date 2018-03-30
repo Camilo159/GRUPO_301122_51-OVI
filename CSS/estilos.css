@@ -195,7 +195,7 @@ nav ul li a:hover{
 /*Contenedor principal de la pagina web */
 
 main{
-    width: 98%;
+    width: 95%;
     margin: auto;
     margin-top: 20px;
     padding-bottom: 20px;
@@ -257,7 +257,7 @@ aside h3.title {
     border: none;
     text-align: center;
     outline: none;
-    font-size: 25px;
+    font-size: 1em;
     transition: 0.4s;
     border-bottom: 1px solid #000; 
     border-radius: 5px;
@@ -324,12 +324,12 @@ span.icon-minus, span.icon-plus{
 }
 
 .content article header h2{
-    font-size: 2.5em;
+    font-size: 2em;
     color:#000;
 }
 
 .content article header p{
-    font-size: 1.5em;
+    font-size: 1.3em;
     color:#454545;
     font-weight: bold;
     margin-top:5px;
@@ -492,6 +492,7 @@ footer .licence img{
         width:100%;
         margin-top: 10px;
         margin-left: 0;
+        padding: 10px;
     }
 }
 
