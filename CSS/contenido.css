@@ -6,6 +6,10 @@
     transition: 1s ease;
 }
 
+.content article header{
+    margin-bottom: 20px;
+}
+
 .content div.principal{
     margin-top: 50px;
     transition: 1s ease;
