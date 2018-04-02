@@ -19,7 +19,8 @@
 		//contenido autores.html
 		cargarContenido("#autores","autores.html");
 
-		/* Agregar copntenido de Github */
+		/* Agregar contenido de Github */
+		cargarContenido("#Articulo1-github","Principal_git.html");
 		cargarContenido("#github-video","videoGithub.html");
 		/* Agregar contenido de HTML */
 		cargarContenido("#Articulo1-HTML5","Principal_HTML5.html");

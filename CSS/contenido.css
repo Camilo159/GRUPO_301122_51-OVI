@@ -22,9 +22,51 @@ div.scroll{
     margin-bottom: 20px;
     width:100%;
 }
+
+.content article ol.lista{
+    list-style: none;
+}
+
+.content article ul.lista{
+    list-style: decimal;
+}
+
+.content article ul.lista, .content article ol.lista{
+    margin-bottom:20px;
+}
+
+
+.content article ol.lista li{
+    margin-bottom: 5px;
+    margin-left: 1.5%;
+    font-size: 1.3em;
+
+}
+
+div.image{
+    width: 40%;
+    float: left;
+    padding: 1%;
+    margin-right: 2%;
+}
+
+div.image img{
+    width:100%;
+    height:auto;
+}
+
 .resaltado{
     font-weight: bold;
 }
+
+.reference{
+    font-style:italic;
+    color:#454545;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
 @media screen and (max-width: 1100px){
    
     .content article .video{
@@ -34,6 +76,12 @@ div.scroll{
      .content div.principal{
         margin-top:30px;
 
+    }
+
+    div.image{
+        width:70%;
+        float: none;
+        margin:auto;
     }
 }
 
