@@ -207,7 +207,7 @@ main{
 /* Aside de la pagina web */
 
 aside{
-    width: 25%;
+    width: 22.5%;
     background: #ccc;
     float: left;
     margin-right: 1%;
@@ -309,7 +309,7 @@ span.icon-minus, span.icon-plus{
 /* Section principal pagina web */
 
 .content{
-    width:70%;
+    width:75.5%;
     background:#fff;			
     float: left;
     margin-left:1%;
