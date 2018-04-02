@@ -448,6 +448,14 @@ footer .licence img{
     main{
         width: 100%;
     }
+
+    aside{
+      width: 25%;
+    }
+
+    .content{
+        width: 73%;
+    }
 }
 
 

@@ -7,26 +7,40 @@
 }
 
 .content div.principal{
-    margin-top:30px;
-
+    margin-top: 50px;
+    transition: 1s ease;
 }
+
 div.scroll{
     height:1225px;
     overflow:scroll;
+    padding: 1%;
 }
 .content article > p, article > h3, article > h2, .content div.principal{
     font-size: 1.3em;
     text-align: justify;
     margin-bottom: 20px;
-    width:98%;
-    margin-left:0.5%;
+    width:100%;
 }
 .resaltado{
     font-weight: bold;
 }
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1100px){
    
     .content article .video{
         height: 300px;
+    }
+
+     .content div.principal{
+        margin-top:30px;
+
+    }
+}
+
+@media screen and (max-width: 670px){
+    
+    div.scroll{
+        overflow:hidden;
+        height:auto;
     }
 }
