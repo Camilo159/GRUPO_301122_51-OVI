@@ -22,7 +22,7 @@
 		/* Agregar copntenido de Github */
 		cargarContenido("#github-video","videoGithub.html");
 		/* Agregar contenido de HTML */
-		cargarContenido("#articulo1-html5","Principal_HTML5.html");
+
 		/* Agregar contenido de CSS */
 	});
 })();
