@@ -8,13 +8,17 @@
 
 .content div.principal{
     margin-top:30px;
-}
 
+}
+div.scroll{
+    height:1225px;
+    overflow:scroll;
+}
 .content article > p, article > h3, article > h2, .content div.principal{
     font-size: 1.3em;
     text-align: justify;
     margin-bottom: 20px;
-    width:100%;
+    width:98%;
     margin-left:0.5%;
 }
 .resaltado{
