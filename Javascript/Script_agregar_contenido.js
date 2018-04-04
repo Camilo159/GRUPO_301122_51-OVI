@@ -4,7 +4,18 @@
 		function cargarContenido(id,contenido){
 			$(id).click(function(){
 				$("#contenido").load(contenido);
+
+				var padre = $(id).parent()[0];
+				$("div.panel ul li").css({"background":"#fff"});
+
+				for(i = 0; i < $("div.panel ul li").length; i++){
+
+					if(padre == $("div.panel ul li")[i]){
+						$(padre).css({"background":"#ECECEC"});
+					}
+				}
 			});
+
 		}
 		$("#contenido").load("contenido_principal.html");
 
