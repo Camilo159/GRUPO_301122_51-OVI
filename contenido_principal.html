@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Pagina de Inicio</title>
+	<script src="Javascript/slider.js"></script>
+</head>
+<body>
+
 <article>
 <header>
 <h2>O.V.I Diseño de sitios web</h2>
@@ -12,12 +21,12 @@
 			</section>
 		</li>
 		<li>
-			<img src="Imagenes/HTML5.png" alt="github" title="github"/>
+			<img src="Imagenes/HTML5.png" alt="HTML5" title="HTML5"/>
 			<section class="caption">
 			</section>
 		</li>
 		<li>
-			<img src="Imagenes/css3.png" alt="github" title="github"/>
+			<img src="Imagenes/css3.png" alt="CSS3" title="CSS3"/>
 			<section class="caption">
 			</section>
 		</li>
@@ -34,102 +43,23 @@
 </div><BR>
 <div class="principal">
 	<p>
-	Estimado (a) estudiante, sea bienvenido al Objeto Virtual de Información (O.V.I) diseñado por los estudiantes del 	curso de Diseño de Sitios Web, que contiene información sobre las temáticas generales del curso. En este material encontrará contenidos de lectura y multimediales que le ayudaran en el desarrollo de las actividades de aprendizaje.<br>
-	Es importante que navegue por las diferentes secciones y revise todo el material disponible, con esto lograra adquirir y afianzar sus conocimientos. Se ha tratado de consolidar para este O.V.I. un banco de materiales actualizado y con estrecha relación con los contenidos y las actividades del curso.<br>
-	Cualquier inquietud frente a este O.V.I. se estará pendiente para brindarle la ayuda y soporte necesarios, muchos   		  éxitos en sus actividades académicas y se le desea que con ayuda de este material las pueda desarrollar de la mejor forma.</p><br>
+	Estimado (a) estudiante, sea bienvenido al Objeto Virtual de Información (O.V.I) diseñado por los estudiantes del 	curso de Diseño de Sitios Web, que contiene información sobre las temáticas generales del curso. En este material encontrará contenidos de lectura y multimediales que le ayudaran en el desarrollo de las actividades de aprendizaje.</br>
+	Es importante que navegue por las diferentes secciones y revise todo el material disponible, con esto lograra adquirir y afianzar sus conocimientos. Se ha tratado de consolidar para este O.V.I. un banco de materiales actualizado y con estrecha relación con los contenidos y las actividades del curso.</br>
+	Cualquier inquietud frente a este O.V.I. se estará pendiente para brindarle la ayuda y soporte necesarios, muchos   		  éxitos en sus actividades académicas y se le desea que con ayuda de este material las pueda desarrollar de la mejor forma.</p></br>
 	<h3>Objetivos</h3>
 	<p>
-	- Aprender a utilizar los comandos de GIT commit, push, pull, fetch a crear ramas branch y merge, así como utilizar GIT a través de una interfaz gráfica en este caso GitHub Desktop.<br>
-	- Crear un repositorio y sincronizarlo con GitHub, así como clonar repositorios desde GitHub a la computadora local para poder trabajar con ellos.<br>
-	- Conocer los diferentes editores de código que podemos utilizar para nuestros desarrollos como Sublime text, notepad ++, brackets y otros editores online como CodePen asi como conocer herramientas que nos permitan crear mockups o wireframes para realizar una maquetación previa de nuestro sitio web.<br>
-	- Aprender la sintaxis y utilización del lenguaje de etiquetado HTML5 y el lenguaje de estilos CSS3, para diseñar sitios web conforme a las necesidades y requerimientos del usuario final.</p><br> 
+	- Aprender a utilizar los comandos de GIT commit, push, pull, fetch a crear ramas branch y merge, así como utilizar GIT a través de una interfaz gráfica en este caso GitHub Desktop.</br>
+	- Crear un repositorio y sincronizarlo con GitHub, así como clonar repositorios desde GitHub a la computadora local para poder trabajar con ellos.</br>
+	- Conocer los diferentes editores de código que podemos utilizar para nuestros desarrollos como Sublime text, notepad ++, brackets y otros editores online como CodePen asi como conocer herramientas que nos permitan crear mockups o wireframes para realizar una maquetación previa de nuestro sitio web.</br>
+	- Aprender la sintaxis y utilización del lenguaje de etiquetado HTML5 y el lenguaje de estilos CSS3, para diseñar sitios web conforme a las necesidades y requerimientos del usuario final.</p></br> 
 	<h3>Contenido</h3>  
 	<p>
-	- Respositorios Git y GitHub. <br>
-	- HTML5.<br>
-	- CSS3.<br>
+	- Respositorios Git y GitHub. </br>
+	- HTML5.</br>
+	- CSS3.</br>
 	- Editores de Codigo.<br>
 	- Informacion Adicional.<br> </p>
-	<footer>
-	<div class="button-next"><a href="#" onclick="cargar('#contenido', 'VideoGithub.html')" title="Siguiente" class="icon-arrow-right"></a></div>
-	</footer>
 </div>
-<script>
-	$(document).ready(function(){
 
-	//Paginación Dinamica
-	var items = $('.slider li').length;
-	var imgPos = 1;
-
-	for(i = 1; i <= items; i++){
-		$(".pagination").append('<li><span class="icon-radio-checked2"></span></li>');
-	}
-	//-----------------------------
-
-	//solo aparezca la primera imagen
-	$(".slider li").hide();
-	$(".slider li:first").show();
-	$(".pagination li:first").css({"color" : "#F4AF00"});
-	//------------------------------
-
-	//Ejecutando Funciones
-	$('.pagination li').click(pagination);
-	$('.right span').click(nextSlider);
-	$('.left span').click(prevSlider);
-
-	
-	//Aplicando Intervalo automatico
-	/*
-	var intervalo = setInterval(function(){
-		nextSlider();
-	},3000);
-	*/
-	
-
-	//FUNCIONES -----------------------------------
-
-	function pagination(){
-		//posición del elemento
-		var paginationPosition = $(this).index() + 1;
-
-		$(".slider li").hide();
-		$(".slider li:nth-child("+ paginationPosition +")").fadeIn();
-
-		$(".pagination li").css({"color": "#125893"});
-		$(this).css({"color" : "#F4AF00"});
-
-		imgPos = paginationPosition;
-	}
-
-	function nextSlider(){
-
-		if(imgPos >= items){
-			imgPos = 1;
-		}else{
-			imgPos++;	
-		}
-		
-		$(".slider li").hide();
-		$(".slider li:nth-child("+ imgPos +")").fadeIn();
-
-		$(".pagination li").css({"color": "#125893"});
-		$(".pagination li:nth-child("+imgPos+")").css({"color" : "#F4AF00"})
-		console.log("haber");
-	}
-
-	function prevSlider(){
-
-		if(imgPos <= 1){
-			imgPos = items;
-		}else{
-			imgPos--;	
-		}
-		
-		$(".slider li").hide();
-		$(".slider li:nth-child("+ imgPos +")").fadeIn();
-
-		$(".pagination li").css({"color": "#125893"});
-		$(".pagination li:nth-child("+imgPos+")").css({"color" : "#F4AF00"})
-	}
-});
-</script>
+</body>
+</html>
