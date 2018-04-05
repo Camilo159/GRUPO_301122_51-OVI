@@ -131,6 +131,7 @@ nav ul li ul li:first-child a{
 
 nav ul li:hover > ul{
     display: block;
+    z-index:100;
 }
 
 header nav ul li a{
@@ -175,7 +176,7 @@ nav ul li a:hover{
     border:none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 1em;
     transition:0.4s; 
     border: 1px solid #000;
     border-radius: 5px;
@@ -195,7 +196,7 @@ nav ul li a:hover{
 /*Contenedor principal de la pagina web */
 
 main{
-    width: 80%;
+    width: 95%;
     margin: auto;
     margin-top: 20px;
     padding-bottom: 20px;
@@ -206,7 +207,7 @@ main{
 /* Aside de la pagina web */
 
 aside{
-    width: 30%;
+    width: 22.5%;
     background: #ccc;
     float: left;
     margin-right: 1%;
@@ -285,10 +286,12 @@ aside h3.title {
     transition: 1s all ease-in;
 }
 
+
+
 div.panel ul li a{
     display: block;
     padding: 10px 10px 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     color: #666;
     text-decoration: none; 
     transition: 0.2s; 
@@ -308,7 +311,7 @@ span.icon-minus, span.icon-plus{
 /* Section principal pagina web */
 
 .content{
-    width:68%;
+    width:75.5%;
     background:#fff;			
     float: left;
     margin-left:1%;
@@ -324,13 +327,13 @@ span.icon-minus, span.icon-plus{
 }
 
 .content article header h2{
-    font-size: 1.5em;
+    font-size: 2em;
     color:#000;
 }
 
 .content article header p{
-    font-size: 0.8em;
-    color:#999;
+    font-size: 1.3em;
+    color:#454545;
     font-weight: bold;
     margin-top:5px;
 }
@@ -447,6 +450,18 @@ footer .licence img{
     main{
         width: 100%;
     }
+
+    aside{
+      width: 25%;
+    }
+
+    .content{
+        width: 73%;
+    }
+
+    .social{
+        top: 5%;
+    }
 }
 
 
@@ -492,6 +507,7 @@ footer .licence img{
         width:100%;
         margin-top: 10px;
         margin-left: 0;
+        padding: 10px;
     }
 }
 

@@ -1,25 +1,98 @@
 .content article .video{
-    width:95%;
-    height:400px;
-    margin-left: 2.5%;
+    width:80%;
+    height:500px;
+    margin-left: 10%;
     margin-bottom: 20px;
     transition: 1s ease;
 }
 
-.content article > p{
+.content article header{
+    margin-bottom: 20px;
+}
+
+.content div.principal{
+    margin-top: 50px;
+    transition: 1s ease;
+}
+
+div.scroll{
+    height:1225px;
+    overflow:scroll;
+    padding: 1%;
+}
+.content article > p, article > h3, article > h2, .content div.principal{
+    font-size: 1.3em;
     text-align: justify;
     margin-bottom: 20px;
-    width:95%;
-    margin-left:2.5%;
+    width:100%;
+}
+
+.content article ol.lista{
+    list-style: none;
+}
+
+.content article ul.lista{
+    list-style: decimal;
+}
+
+.content article ul.lista, .content article ol.lista{
+    margin-bottom:20px;
+}
+
+
+.content article ol.lista li{
+    margin-bottom: 5px;
+    margin-left: 1.5%;
+    font-size: 1.3em;
+
+}
+
+div.image{
+    width: 40%;
+    float: left;
+    padding: 1%;
+    margin-right: 2%;
+}
+
+div.image img{
+    width:100%;
+    height:auto;
 }
 
 .resaltado{
     font-weight: bold;
 }
 
-@media screen and (max-width: 1050px){
+.reference{
+    font-style:italic;
+    color:#454545;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+@media screen and (max-width: 1100px){
    
     .content article .video{
         height: 300px;
+    }
+
+     .content div.principal{
+        margin-top:30px;
+
+    }
+
+    div.image{
+        width:70%;
+        float: none;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width: 670px){
+    
+    div.scroll{
+        overflow:hidden;
+        height:auto;
     }
 }
